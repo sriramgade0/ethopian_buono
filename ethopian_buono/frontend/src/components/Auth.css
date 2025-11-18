@@ -1,0 +1,56 @@
+.auth-page {
+  background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%);
+  min-height: 100vh;
+}
+
+.auth-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.auth-subtitle {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.auth-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card .nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.auth-card .nav-link {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.auth-card .nav-link.active {
+  color: #28a745;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: 600;
+}
+
+.auth-card .btn-success {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.auth-card .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.auth-card .btn-success:disabled {
+  background: #6c757d;
+  transform: none;
+}
