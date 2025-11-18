@@ -19,8 +19,12 @@ mongoose.connect('mongodb://localhost:27017/ethopian_buono', {
 .catch(err => console.error('Could not connect to MongoDB', err));
 
 // Routes
+const { router: authRouter } = require('./routes/auth');
+app.use('/api/auth', authRouter);
+app.use('/api/tdee', require('./routes/tdee'));
 app.use('/api/recipes', require('./routes/recipes'));
 app.use('/api/meal-plans', require('./routes/mealPlans'));
+app.use('/api/shopping-lists', require('./routes/shoppingList'));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
